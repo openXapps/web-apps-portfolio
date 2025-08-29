@@ -1,7 +1,8 @@
 import { ThemeProvider } from "@/context/theme-provider"
 import Header from "@/components/header"
-import AboutMe from "@/components/about-me"
+// import AboutMe from "@/components/about-me"
 import Career from "@/components/career"
+import Sidebar from '@/components/sidebar'
 
 export default function App() {
 
@@ -10,7 +11,7 @@ export default function App() {
       <div className="container mx-auto">
         <Header />
         <div className="mt-2 sm:mx-2 flex gap-3">
-          <AboutMe />
+          <Sidebar />
           <Career />
         </div>
       </div>

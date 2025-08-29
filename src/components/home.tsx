@@ -1,4 +1,3 @@
-
 function AboutMeTitle({ title }: { title: string }) {
   return (
     <div className="bg-slate-500 rounded-sm pl-0.5">
@@ -20,16 +19,7 @@ function PersonalInfoItem({ title, value, isLink = false }: { title: string, val
   )
 }
 
-function SkillsItem({ skill, level }: { skill: string, level: string }) {
-  return (
-    <div>
-      <h5 className="text-slate-100 font-semibold">{skill}</h5>
-      <h5 className="text-slate-300">{level}</h5>
-    </div>
-  )
-}
-
-export default function AboutMe() {
+export default function Home() {
   return (
     <div className="flex flex-col gap-3">
       <div className="space-y-1">
