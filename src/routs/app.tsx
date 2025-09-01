@@ -1,21 +1,19 @@
-import {
-  RouterProvider,
-  createBrowserRouter,
-} from 'react-router';
+import { RouterProvider, createBrowserRouter } from "react-router"
 import { ThemeProvider } from "@/context/theme-provider"
-import Layout from '@/routs/layout';
-import NoPage from '@/routs/nopage';
-import Home from '@/components/home';
+
+import Home from "@/components/home"
+import Layout from "@/routs/layout"
+import NoPage from "@/routs/nopage"
 
 export default function App() {
-const router = createBrowserRouter([
+  const router = createBrowserRouter([
     {
-      path: '/',
+      path: "/",
       element: <Layout />,
       children: [
         {
           index: true,
-          element: <Home  />,
+          element: <Home />,
         },
         {
           path: "/",
@@ -24,7 +22,7 @@ const router = createBrowserRouter([
       ],
       errorElement: <NoPage />,
     },
-  ], { basename: '/apps/portfolio' })
+  ], { basename: "/apps/portfolio" })
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
