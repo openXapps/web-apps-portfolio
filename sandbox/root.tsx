@@ -2,7 +2,7 @@ import { Outlet } from "react-router"
 
 export default function Root() {
   return (
-    <div>
+    <div className="container mx-auto">
       <Outlet />
     </div>
   )
