@@ -13,19 +13,19 @@ export default function Layout() {
             <NavLink to="/" className={({ isActive }) =>
               [
                 isActive ? "bg-slate-500" : "",
-                "p-3 rounded-md text-nowrap"
+                "p-3 rounded-r-full text-nowrap"
               ].join(" ")
             }>Overview</NavLink>
             <NavLink to="/skills" className={({ isActive }) =>
               [
                 isActive ? "bg-slate-500" : "",
-                "p-3 rounded-md text-nowrap"
+                "p-3 rounded-r-full text-nowrap"
               ].join(" ")
             }>Skills</NavLink>
             <NavLink to="/jobhistory" className={({ isActive }) =>
               [
                 isActive ? "bg-slate-500" : "",
-                "p-3 rounded-md text-nowrap"
+                "p-3 rounded-r-full text-nowrap"
               ].join(" ")
             }>Job History</NavLink>
           </nav>
