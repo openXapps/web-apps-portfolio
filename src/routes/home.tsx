@@ -11,12 +11,11 @@ export default function Home() {
       </div>
       <ItemHeader title="Personal Info" />
       <div className="grid gap-2 grid-cols-1 md:grid-cols-2">
-        <Item title="Email Address" value="xxxxxxxx@gmail.com" showCopy />
-        <Item title="Mobile Number" value="+27 ## ###-####" showCopy />
-        <Item title="GitHub Home" value="https://github.com/openXapps" isLink={true} />
-        <Item title="Age & Demographics" value={`${age} year old caucasian male`} />
-        <Item title="Country & Province" value="South Africa, Gauteng" />
-        <Item value="Some text with no title Some text with no title Some text with no title Some text with no title" showCopy />
+        <Item title="Email Address" value="xxxxxxxx@gmail.com" showCopy titleCenter valueCenter />
+        <Item title="Mobile Number" value="+27 ## ###-####" showCopy titleCenter valueCenter />
+        <Item title="GitHub Home" value="https://github.com/openXapps" isLink={true} titleCenter valueCenter />
+        <Item title="Age & Demographics" value={`${age} year old caucasian male`} titleCenter valueCenter />
+        <Item title="Country & Province" value="South Africa, Gauteng" titleCenter valueCenter />
       </div>
     </div>
   )
