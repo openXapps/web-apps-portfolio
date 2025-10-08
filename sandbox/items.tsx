@@ -37,7 +37,7 @@ export function Item({
 
   return (
     <div className="relative px-1 py-2 space-y-1 rounded-sm bg-gray-800">
-      {title && <h5 className={twMerge(titleCenter && "text-center", "text-slate-100 font-semibold px-0.5")}>{title}</h5>}
+      {title && <h5 className={twMerge(titleCenter && "text-center", "text-slate-100 font-semibold")}>{title}</h5>}
 
       {isLink && value && (
         <div className={twMerge(valueCenter && "text-center")}>
@@ -50,7 +50,7 @@ export function Item({
       {bullets.length > 0 && bullets.map((v, i) => (
         // <div key={i} className="flex border-t-2 py-3 px-0.5">
         <div key={i} className="py-3 px-0.5">
-          <p className="border-b-2 font-semibold">{v.product} - <span className="font-normal">{v.level}</span></p>
+          <p className="border-b-2 font-semibold mb-1 pb-1">{v.product} - <span className="font-normal">{v.level}</span></p>
           <div>
             {v.experience.map((v2, i2) => (
               <div className="flex gap-3">

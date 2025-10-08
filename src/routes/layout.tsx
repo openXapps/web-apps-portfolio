@@ -1,13 +1,11 @@
 import { NavLink, Outlet } from "react-router"
-import Header from "@/components/header";
-// import Sidebar from "@/components/sidebar";
-
+import LayoutHeader from "@/components/layout-header";
 
 export default function Layout() {
   return (
     <div className="mx-auto max-w-[1024px]">
-      <div className="mt-2 mx-2">
-        <Header />
+      <div className="mt-2 mb-2 mx-2">
+        <LayoutHeader />
         <div className="mt-2 flex gap-3">
           <nav className="flex flex-col gap-2">
             <NavLink to="/" className={({ isActive }) =>
