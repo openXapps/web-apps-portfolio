@@ -1,22 +1,27 @@
-import ContentItemHeader from '@/components/content-item-header';
-import ContentItem from '@/components/content-item';
-import { remedySkills, webDevSkills, dataSkills } from "@/data/skills-data"
+
+import { useLoaderData } from "react-router"
+
+import ContentItemHeader from '@/components/content-item-header'
+import ContentItem from '@/components/content-item'
+import type { loadSkills } from "@/lib/loaders"
 
 export default function Skills() {
+  const { _remedySkills, _devSkills, _osSkills } = useLoaderData<typeof loadSkills>()
+
   return (
     <div className="flex flex-col gap-3 w-full">
       <ContentItemHeader title="BMC Helix (Remedy)" />
       <div className="">
-        <ContentItem title="Development & Operational Abilities" titleCenter bullets={remedySkills} />
+        <ContentItem title="Development & Operational Abilities" titleCenter bullets={_remedySkills} />
       </div>
       <ContentItemHeader title="Web Development" />
       <div className="flex flex-col gap-1">
-        <ContentItem titleCenter bullets={webDevSkills} />
+        <ContentItem titleCenter bullets={_devSkills} />
         <ContentItem title="ReactJS Projects" value="https:openapps.co.za" isLink />
       </div>
-      <ContentItemHeader title="Data Management" />
+      <ContentItemHeader title="Operating System" />
       <div className="">
-        <ContentItem title="Development & Operational Abilities" titleCenter bullets={dataSkills} />
+        <ContentItem bullets={_osSkills} />
       </div>
     </div>
   )

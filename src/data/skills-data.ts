@@ -13,19 +13,28 @@ export const remedySkills: ContentItemBullet[] = [
   {
     product: "BMC Atrium CMDB",
     experience: [
-      "Maintaining a beautiful clean and accurate CMDB has been my passion from day one.",
+      "Maintaining a clean and accurate CMDB has been my passion from day one.",
       "As a perfectionist, I enforce strict data naming conventions and prevent CI duplication.",
       "I understand how important asset life-cycle management is for any organization. My best work has been the implementation a custom asset life-cycle process that flows seamlessly into ITSM Asset Management.",
       "BMC's out-the-box normalization is weak in a sense of managing product life-cycle. I've built an end-to-end product normalization and maintenance life-cycle deployable application in Remedy that flows seamlessly into ITSM Foundation Data.",
-      "True magic of a clean CMDB lies in the ability to use Atrium Integrator (Pentaho) for CI transformation and well defined datasets, normalization and reconciliation jobs.",
+      "The secret of a clean CMDB resides in the ability to use Atrium Integrator (Pentaho) for CI transformation, structured datasets, an optimized normalization process and well-defined reconciliation jobs.",
+      "I have extensive knowledge of how to utilize a variety of data sources to populate and supplement CMDB CIs, including Asset Management. I use BMC Discovery (ADDM), SCCM, SAP Asset Management and manual data sources.",
+    ],
+    level: "Expert"
+  },
+  {
+    product: "BMC Discovery (ADDM)",
+    experience: [
+      "My current employer uses BMC Discovery (ADDM) extensively. Once of my many responsibilities is to configure and maintain the ADDM environment.",
+      "I use ADDM as one of the BMC Atrium CMDB data sources. However its essential to control what flows into the CMDB and control CI duplication. I have mastered this process.",
     ],
     level: "Expert"
   },
   {
     product: "BMC Atrium Integrator (Pentaho)",
     experience: [
-      "The secret in mastering ETL development is to respect naming standards, modular components and readable neat content.",
-      "Anyone can build a Pentaho job and transformation, but not everyone can do it like an expert. I have mastered the art of true automation and data quality through Atrium Integrator (Pentaho).",
+      "The secret in mastering ETL development is to respect naming conventions, modular reusable components and robust effective content.",
+      "Anyone can build a Pentaho job and transformation, but not everyone can do it like a pro. I have mastered the art of true automation and data quality through Atrium Integrator (Pentaho).",
     ],
     level: "Expert"
   },
@@ -40,7 +49,7 @@ export const remedySkills: ContentItemBullet[] = [
   },
 ]
 
-export const webDevSkills: ContentItemBullet[] = [
+export const devSkills: ContentItemBullet[] = [
   {
     product: "ReactJS",
     experience: [
@@ -52,19 +61,28 @@ export const webDevSkills: ContentItemBullet[] = [
     level: "Expert"
   },
   {
-    product: "Java Spring Boot",
+    product: "Java & Spring Boot",
     experience: [
-      "",
+      "I've completed a number of Java and Spring Boot courses, but I haven't had the opportunity to use it in my place of work.",
+      "I know enough about Java and Spring Boot development to build basic functional programs, but I'm not an expert.",
     ],
     level: "Beginner"
   },
 ]
 
-export const dataSkills: ContentItemBullet[] = [
+export const osSkills: ContentItemBullet[] = [
   {
-    product: "BMC Remedy Core",
+    product: "Microsoft Windows",
     experience: [
-      "XX",
+      "I've been working in the Microsoft Windows operating system since Windows 95.",
+    ],
+    level: "Expert"
+  },
+  {
+    product: "Linux",
+    experience: [
+      "I run a Linux operating system when and where ever possible. I prefer Linux over Windows.",
+      "Whether its Linux for desktop to server, I've been working with this beautiful operating system since early 2000."
     ],
     level: "Expert"
   },
