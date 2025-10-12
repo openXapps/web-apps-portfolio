@@ -14,12 +14,12 @@ export default function Skills() {
       <div className="">
         <ContentItem title="Development & Operational Abilities" titleCenter bullets={_remedySkills} />
       </div>
-      <ContentItemHeader title="Web Development" />
+      <ContentItemHeader title="Development Platforms" />
       <div className="flex flex-col gap-1">
         <ContentItem titleCenter bullets={_devSkills} />
-        <ContentItem title="ReactJS Projects" value="https:openapps.co.za" isLink />
+        <ContentItem title="ReactJS Projects" value="https://openapps.co.za" isLink />
       </div>
-      <ContentItemHeader title="Operating System" />
+      <ContentItemHeader title="Operating Systems" />
       <div className="">
         <ContentItem bullets={_osSkills} />
       </div>

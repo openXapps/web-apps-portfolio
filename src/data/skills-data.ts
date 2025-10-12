@@ -28,7 +28,7 @@ export const remedySkills: ContentItemBullet[] = [
       "My current employer uses BMC Discovery (ADDM) extensively. Once of my many responsibilities is to configure and maintain the ADDM environment.",
       "I use ADDM as one of the BMC Atrium CMDB data sources. However its essential to control what flows into the CMDB and control CI duplication. I have mastered this process.",
     ],
-    level: "Expert"
+    level: "Advanced/Proficient"
   },
   {
     product: "BMC Atrium Integrator (Pentaho)",
@@ -45,7 +45,7 @@ export const remedySkills: ContentItemBullet[] = [
       "A healthy and robust ITSM deployment does not rely on customization. It relies on quality foundation and CI data.",
       "I'm currently seen as the custodian of my employer's ITSM foundation data. Its my responsibility to make sure clean and quality organizational data flows into Remedy. For that I've established reliable data sources which I read, transform and push to Remedy via BMC Atrium Integrator (Pentaho).",
     ],
-    level: "Expert"
+    level: "Advanced/Proficient"
   },
 ]
 
@@ -58,7 +58,14 @@ export const devSkills: ContentItemBullet[] = [
       "I've adapted to using Vite as my build tool, Tailwind as my CSS framework, Shadcn as my component builder, React Router for routing and TypeScript as my preferred compiler.",
       "Unfortunately my day job does not require React development, but I did build my team a handy React Progressive Web Application (PWA) that authenticates into BMC Remedy via RSSO and allow for a full mobile experience opening a comprehensive ITSM management user interface.",
     ],
-    level: "Expert"
+    level: "Advanced/Proficient"
+  },
+  {
+    product: "NextJS",
+    experience: [
+      "I've been developing in NextJS since mid 2025.",
+    ],
+    level: "Intermediate/Competent"
   },
   {
     product: "Java & Spring Boot",
@@ -66,7 +73,7 @@ export const devSkills: ContentItemBullet[] = [
       "I've completed a number of Java and Spring Boot courses, but I haven't had the opportunity to use it in my place of work.",
       "I know enough about Java and Spring Boot development to build basic functional programs, but I'm not an expert.",
     ],
-    level: "Beginner"
+    level: "Novice/Beginner"
   },
 ]
 
@@ -76,7 +83,7 @@ export const osSkills: ContentItemBullet[] = [
     experience: [
       "I've been working in the Microsoft Windows operating system since Windows 95.",
     ],
-    level: "Expert"
+    level: "Advanced/Proficient"
   },
   {
     product: "Linux",
@@ -84,6 +91,6 @@ export const osSkills: ContentItemBullet[] = [
       "I run a Linux operating system when and where ever possible. I prefer Linux over Windows.",
       "Whether its Linux for desktop to server, I've been working with this beautiful operating system since early 2000."
     ],
-    level: "Expert"
+    level: "Advanced/Proficient"
   },
 ]

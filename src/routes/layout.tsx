@@ -14,18 +14,19 @@ export default function Layout() {
                 "p-3 rounded-r-full text-nowrap"
               ].join(" ")
             }>Overview</NavLink>
-            <NavLink to="/skills" className={({ isActive }) =>
+            <NavLink to="/skills" className={({ isActive, isPending }) =>
               [
                 isActive ? "bg-slate-500" : "",
+                isPending ? "animate-pulse" : "",
                 "p-3 rounded-r-full text-nowrap"
               ].join(" ")
-            }>Skills</NavLink>
+            }>{({ isPending }) => (isPending ? "Loading..." : "Skills")}</NavLink>
             <NavLink to="/jobhistory" className={({ isActive }) =>
               [
                 isActive ? "bg-slate-500" : "",
                 "p-3 rounded-r-full text-nowrap"
               ].join(" ")
-            }>Job History</NavLink>
+            }>{({ isPending }) => (isPending ? "Loading..." : "Job History")}</NavLink>
           </nav>
           {/* <Sidebar /> */}
           <Outlet />

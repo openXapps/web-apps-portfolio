@@ -16,6 +16,6 @@ export async function loadSkills(): Promise<Records> {
         _osSkills: osSkills
       }
       resolve(records)
-    }, 1000)
+    }, 1500)
   })
 }

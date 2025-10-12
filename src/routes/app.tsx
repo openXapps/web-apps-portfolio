@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router"
+import { RouterProvider, createBrowserRouter, type RouteObject } from "react-router"
 import { ThemeProvider } from "@/context/theme-provider"
 
 import Layout from '@/routes/layout'
@@ -10,10 +10,12 @@ import NoPage from "@/routes/nopage"
 import { loadSkills } from "@/lib/loaders"
 
 export default function App() {
-  const router = createBrowserRouter([
+  // const router = createBrowserRouter([
+  const router: RouteObject[] = [
     {
       path: "/",
       Component: Layout,
+      hydrateFallbackElement: (<p>Loading...</p>),
       children: [
         {
           index: true,
@@ -22,7 +24,7 @@ export default function App() {
         {
           path: "skills",
           Component: Skills,
-          loader: loadSkills
+          loader: loadSkills,
         },
         {
           path: "jobhistory",
@@ -31,11 +33,12 @@ export default function App() {
       ],
       errorElement: <NoPage />,
     },
-  ], { basename: "/apps/portfolio" })
+  ]
+  // ,{ basename: "/apps/porTfolio" })
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <RouterProvider router={router} />
+      <RouterProvider router={createBrowserRouter(router, { basename: "/apps/portfolio" })} />
     </ThemeProvider>
   )
 }

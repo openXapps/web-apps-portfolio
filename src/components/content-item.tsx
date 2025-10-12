@@ -4,8 +4,18 @@ import { twMerge } from 'tailwind-merge'
 export type ContentItemBullet = {
   product: string
   experience: string[]
-  level: "Beginner" | "Intermediate" | "Expert"
+  level: "Novice/Beginner" | "Intermediate/Competent" | "Advanced/Proficient" | "Expert"
 }
+
+/**
+ *  Novice/Beginner:        You are just starting to learn the skill and may need
+ *                          guidance to complete tasks.
+ *  Intermediate/Competent: You have moved past the basics and can complete tasks
+ *                          with some independence, though you may still need help for complex issues.
+ *  Advanced/Proficient:    You can complete tasks independently and are confident in handling
+ *                          most situations. You can also help others with the skill.
+ *  Expert:                 You are highly confident, can troubleshoot problems, and can guide or teach others.
+ */
 
 type ContentItemProps = {
   title?: string
@@ -44,9 +54,9 @@ export default function ContentItem({
           <p className="border-b-2 font-semibold mb-1 pb-1">{v.product} - <span className="font-normal">{v.level}</span></p>
           <div>
             {v.experience.map((v2, i2) => (
-              <div className="flex gap-3">
-                <p key={i2} className="">-</p>
-                <p key={i2} className="">{v2}</p>
+              <div key={i2} className="flex gap-3">
+                <p className="">-</p>
+                <p className="">{v2}</p>
               </div>
             ))}
           </div>
