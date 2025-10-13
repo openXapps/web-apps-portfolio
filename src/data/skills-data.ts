@@ -6,7 +6,7 @@ export const remedySkills: ContentItemBullet[] = [
     experience: [
       "I've been building Remedy workflows since 1997.",
       "I support on-premises (v21.x), PaaS (v.25.x) & SaaS (v25.x) deployments.",
-      "My strong points are to build stand-alone deplorable application in Remedy, customize existing workflow by following best-practice guidelines and ability to troubleshoot the most complex issues.",
+      "Some of my many strong points are to build stand-alone deployable application in Remedy, customize existing workflow by following best-practice guidelines and ability to troubleshoot the most complex issues.",
     ],
     level: "Expert"
   },
@@ -42,7 +42,8 @@ export const remedySkills: ContentItemBullet[] = [
     product: "BMC IT Service Management",
     experience: [
       "I've been supporting BMC Remedy ITSM since its first release.",
-      "A healthy and robust ITSM deployment does not rely on customization. It relies on quality foundation and CI data.",
+      "A healthy and robust ITSM deployment relies on quality foundation data and a complete CMDB.",
+      "As seen in most organizations, the ITSM suite is not always acceptable for all processes. I prefer to build custom modules that are meta data driven and configurable. These custom modules plug seamlessly into the ITSM suite with very little overlays if needed.",
       "I'm currently seen as the custodian of my employer's ITSM foundation data. Its my responsibility to make sure clean and quality organizational data flows into Remedy. For that I've established reliable data sources which I read, transform and push to Remedy via BMC Atrium Integrator (Pentaho).",
     ],
     level: "Advanced/Proficient"
