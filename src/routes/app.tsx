@@ -29,6 +29,7 @@ export default function App() {
         {
           path: "jobhistory",
           Component: JobHistory,
+          loader: loadSkills,
         },
       ],
       errorElement: <NoPage />,

@@ -7,7 +7,7 @@ export default function Layout() {
       <div className="mt-2 mb-2 mx-2">
         <LayoutHeader />
         <div className="mt-2 flex gap-3">
-          <nav className="flex flex-col gap-2">
+          <nav className="flex flex-col gap-2 min-w-[110px]">
             <NavLink to="/" className={({ isActive }) =>
               [
                 isActive ? "bg-slate-500" : "",
@@ -21,9 +21,10 @@ export default function Layout() {
                 "p-3 rounded-r-full text-nowrap"
               ].join(" ")
             }>{({ isPending }) => (isPending ? "Loading..." : "Skills")}</NavLink>
-            <NavLink to="/jobhistory" className={({ isActive }) =>
+            <NavLink to="/jobhistory" className={({ isActive, isPending }) =>
               [
                 isActive ? "bg-slate-500" : "",
+                isPending ? "animate-pulse" : "",
                 "p-3 rounded-r-full text-nowrap"
               ].join(" ")
             }>{({ isPending }) => (isPending ? "Loading..." : "Job History")}</NavLink>

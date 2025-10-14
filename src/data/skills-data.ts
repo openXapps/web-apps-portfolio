@@ -45,6 +45,7 @@ export const remedySkills: ContentItemBullet[] = [
       "A healthy and robust ITSM deployment relies on quality foundation data and a complete CMDB.",
       "As seen in most organizations, the ITSM suite is not always acceptable for all processes. I prefer to build custom modules that are meta data driven and configurable. These custom modules plug seamlessly into the ITSM suite with very little overlays if needed.",
       "I'm currently seen as the custodian of my employer's ITSM foundation data. Its my responsibility to make sure clean and quality organizational data flows into Remedy. For that I've established reliable data sources which I read, transform and push to Remedy via BMC Atrium Integrator (Pentaho).",
+      "My current employer has a great team of Service Request (SR) developers. I've been building full automation with Atrium Integrator (Pentaho) on almost all their SRs. Some are simple and some are extremely complex with REST APIs and 3rd party automation.",
     ],
     level: "Advanced/Proficient"
   },
