@@ -1,33 +1,19 @@
 import { Clipboard } from "lucide-react"
 import { twMerge } from 'tailwind-merge'
 
-export type ContentItemBullet = {
-  product: string
-  experience: string[]
-  level: "Novice/Beginner" | "Intermediate/Competent" | "Advanced/Proficient" | "Expert"
-}
+import type { SkillsItemBullet } from "@/data/skills-data"
 
-/**
- *  Novice/Beginner:        You are just starting to learn the skill and may need
- *                          guidance to complete tasks.
- *  Intermediate/Competent: You have moved past the basics and can complete tasks
- *                          with some independence, though you may still need help for complex issues.
- *  Advanced/Proficient:    You can complete tasks independently and are confident in handling
- *                          most situations. You can also help others with the skill.
- *  Expert:                 You are highly confident, can troubleshoot problems, and can guide or teach others.
- */
-
-type ContentItemProps = {
+type SkillsItemProps = {
   title?: string
   titleCenter?: boolean
   value?: string
   valueCenter?: boolean
-  bullets?: ContentItemBullet[]
+  bullets?: SkillsItemBullet[]
   isLink?: boolean
   showCopy?: boolean
 }
 
-export default function ContentItem({
+export default function SkillsItem({
   title = "",
   titleCenter = false,
   value = "",
@@ -35,7 +21,7 @@ export default function ContentItem({
   bullets = [],
   isLink = false,
   showCopy = false
-}: ContentItemProps) {
+}: SkillsItemProps) {
 
   return (
     <div className="relative px-1 py-2 space-y-1 rounded-sm bg-gray-800">

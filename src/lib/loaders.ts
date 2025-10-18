@@ -1,21 +1,38 @@
-import type { ContentItemBullet } from "@/components/content-item"
+import type { SkillsItemBullet } from "@/data/skills-data"
 import { remedySkills, devSkills, osSkills } from "@/data/skills-data"
+import type { Responsibility } from "@/data/jobhistory-data"
+import { responsibilities } from "@/data/jobhistory-data"
 
-export type Records = {
-  _remedySkills: ContentItemBullet[]
-  _devSkills: ContentItemBullet[]
-  _osSkills: ContentItemBullet[]
+type SkillRecords = {
+  _remedySkills: SkillsItemBullet[]
+  _devSkills: SkillsItemBullet[]
+  _osSkills: SkillsItemBullet[]
 }
 
-export async function loadSkills(): Promise<Records> {
+export async function loadSkills(): Promise<SkillRecords> {
   return new Promise((resolve) => {
     setTimeout(() => {
-      let records: Records = {
+      let records: SkillRecords = {
         _remedySkills: remedySkills,
         _devSkills: devSkills,
         _osSkills: osSkills
       }
       resolve(records)
-    }, 1500)
+    }, 500)
+  })
+}
+
+type ResponsibilityRecords = {
+  responsibilities: Responsibility[]
+}
+
+export async function loadResponsibilities(): Promise<ResponsibilityRecords> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      let records: ResponsibilityRecords = {
+        responsibilities: responsibilities,
+      }
+      resolve(records)
+    }, 500)
   })
 }

@@ -7,7 +7,7 @@ import Skills from '@/routes/skills'
 import JobHistory from '@/routes/jobhistory'
 import NoPage from "@/routes/nopage"
 
-import { loadSkills } from "@/lib/loaders"
+import { loadSkills, loadResponsibilities } from "@/lib/loaders"
 
 export default function App() {
   // const router = createBrowserRouter([
@@ -29,7 +29,7 @@ export default function App() {
         {
           path: "jobhistory",
           Component: JobHistory,
-          loader: loadSkills,
+          loader: loadResponsibilities,
         },
       ],
       errorElement: <NoPage />,

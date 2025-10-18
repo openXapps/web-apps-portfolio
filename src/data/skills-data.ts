@@ -1,6 +1,20 @@
-import type { ContentItemBullet } from "@/components/content-item"
+export type SkillsItemBullet = {
+  product: string
+  experience: string[]
+  level: "Novice/Beginner" | "Intermediate/Competent" | "Advanced/Proficient" | "Expert"
+}
 
-export const remedySkills: ContentItemBullet[] = [
+/**
+ *  Novice/Beginner:        You are just starting to learn the skill and may need
+ *                          guidance to complete tasks.
+ *  Intermediate/Competent: You have moved past the basics and can complete tasks
+ *                          with some independence, though you may still need help for complex issues.
+ *  Advanced/Proficient:    You can complete tasks independently and are confident in handling
+ *                          most situations. You can also help others with the skill.
+ *  Expert:                 You are highly confident, can troubleshoot problems, and can guide or teach others.
+ */
+
+export const remedySkills: SkillsItemBullet[] = [
   {
     product: "BMC Remedy Core",
     experience: [
@@ -51,7 +65,7 @@ export const remedySkills: ContentItemBullet[] = [
   },
 ]
 
-export const devSkills: ContentItemBullet[] = [
+export const devSkills: SkillsItemBullet[] = [
   {
     product: "ReactJS",
     experience: [
@@ -79,7 +93,7 @@ export const devSkills: ContentItemBullet[] = [
   },
 ]
 
-export const osSkills: ContentItemBullet[] = [
+export const osSkills: SkillsItemBullet[] = [
   {
     product: "Microsoft Windows",
     experience: [
