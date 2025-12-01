@@ -30,17 +30,17 @@ export const remedySkills: SkillsItemBullet[] = [
       "Maintaining a clean and accurate CMDB has been my passion from day one.",
       "As a perfectionist, I enforce strict data naming conventions and prevent CI duplication.",
       "I understand how important asset life-cycle management is for any organization. My best work has been the implementation a custom asset life-cycle process that flows seamlessly into ITSM Asset Management.",
-      "BMC's out-the-box normalization is weak in a sense of managing product life-cycle. I've built an end-to-end product normalization and maintenance life-cycle deployable application in Remedy that flows seamlessly into ITSM Foundation Data.",
-      "The secret of a clean CMDB resides in the ability to use Atrium Integrator (Pentaho) for CI transformation, structured datasets, an optimized normalization process and well-defined reconciliation jobs.",
-      "I have extensive knowledge of how to utilize a variety of data sources to populate and supplement CMDB CIs, including Asset Management. I use BMC Discovery (ADDM), SCCM, SAP Asset Management and manual data sources.",
+      "BMC's out-the-box normalization is weak in a sense of managing product life-cycle. I've built an end-to-end product normalization and maintenance life-cycle deployable application in Remedy that flows seamlessly between CMDB and ITSM Foundation Data.",
+      "The secret of a clean CMDB resides in the ability to use Atrium Integrator (Pentaho) for CI transformation, design structured datasets, implement an optimized normalization process and build well-defined reconciliation jobs.",
+      "I have extensive knowledge of how to utilize a variety of data sources to populate and supplement CMDB CIs, including Asset Management. I'm familiar with BMC Discovery (ADDM), SCCM, SAP Asset Management and other data sources.",
     ],
     level: "Expert"
   },
   {
     product: "BMC Discovery (ADDM)",
     experience: [
-      "My current employer uses BMC Discovery (ADDM) extensively. Once of my many responsibilities is to configure and maintain the ADDM environment.",
-      "I use ADDM as one of the BMC Atrium CMDB data sources. However its essential to control what flows into the CMDB and control CI duplication. I have mastered this process.",
+      "My current employer uses BMC Discovery (ADDM) extensively. One of my many responsibilities, is to configure and maintain the ADDM environment with 4 other team members.",
+      "I use ADDM as one of the BMC Atrium CMDB data sources. However its essential to control what flows into the CMDB and prevent CI duplication. I have mastered this process.",
     ],
     level: "Advanced/Proficient"
   },
@@ -72,7 +72,7 @@ export const devSkills: SkillsItemBullet[] = [
       "In 2016, I tough myself ReactJS. At the time I've already worked in NodeJS for a while.",
       "Since then I've been building ReactJS web apps as pet projects and kept up with the latest releases.",
       "I've adapted to using Vite as my build tool, Tailwind as my CSS framework, Shadcn as my component builder, React Router for routing and TypeScript as my preferred compiler.",
-      "Unfortunately my day job does not require React development, but I did build my team a handy React Progressive Web Application (PWA) that authenticates into BMC Remedy via RSSO and allow for a full mobile experience opening a comprehensive ITSM management user interface.",
+      "Unfortunately my day job does not require React development, but I did build my team a handy React Progressive Web Application (PWA) that authenticates into BMC Remedy RSSO and allow for a full mobile experience with a lightweight comprehensive ITSM management user interface.",
     ],
     level: "Advanced/Proficient"
   },
